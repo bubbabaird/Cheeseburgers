@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheeseburger Orders</title>
+</head>
+<body>
+Hi, please place your order:
+<form action="/new-cheeseburger" method="post">
+    <p>
+        <input type="text" placeholder="Enter your message" name="message-text"/>
+        <button type="submit">Send</button>
+    </p>
+    <p>
+        <input type="text" placeholder="Enter your message" name="message-text"/>
+        <button type="submit">Send</button>
+    </p>
+    <p>
+        <input type="text" placeholder="Enter your message" name="message-text"/>
+        <button type="submit">Send</button>
+    </p>
+    <p>
+        <input type="text" placeholder="Enter your message" name="message-text"/>
+        <button type="submit">Send</button>
+    </p>
+    <p>
+        <input type="radio" value="True" aria-label="Mayo"/>
+        <button type="submit">Send</button>
+    </p>
+</form>
+Here are your cheeseburgers:
+{{#notes}}<p>{{text}}</p>{{/notes}}
+</body>
+</html>
